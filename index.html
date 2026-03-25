@@ -32,8 +32,12 @@
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
     </div>
 
-    <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
-    <footer></footer>
+    <!-- 組員 E 任務：鍵盤快捷鍵說明 -->
+    <footer>
+      <span>⌨️ 快捷鍵：</span>
+      <kbd>Enter</kbd> 送出訊息　
+      <kbd>Esc</kbd> 清空輸入框
+    </footer>
   </div>
 
   <script>
@@ -66,6 +70,13 @@
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
     // 組員 D 任務：在這裡深色模式切換函數
+
+    // 組員 E 任務：Esc 清空輸入框
+    document.getElementById('user-input').addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        this.value = '';
+      }
+    });
   </script>
 
 </body>
