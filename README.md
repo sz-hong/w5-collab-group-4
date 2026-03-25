@@ -9,10 +9,10 @@
 
 | 項目        | 填寫           |
 | ----------- | -------------- |
-| 組別        | 第 四 組       |
-| 組員        | 陳柏宇、楊程軒、陳婉榕、洪紹禎 |
-| GitHub Repo |  https://github.com/sz-hong/w5-collab-group-4.git         |
-| 報告日期    | 2026 / 3 / 26 |
+| 組別        | 第 4 組       |
+| 組員        | 洪紹禎、陳婉榕、楊程軒、陳柏宇                |
+| GitHub Repo | https://github.com/sz-hong/w5-collab-group-4.git |
+| 報告日期    | 2026 / 3 / 25 |
 
 ---
 
