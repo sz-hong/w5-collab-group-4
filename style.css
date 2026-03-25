@@ -43,6 +43,14 @@ header .subtitle {
   margin-top: 4px;
 }
 
+/* ── 組員 C 任務：在這裡加字數統計樣式 ── */
+.word-count {
+  font-size: 13px;
+  color: #666;
+  text-align: right;
+  padding: 8px 24px 0;
+}
+
 #chat-box {
   height: 360px;
   overflow-y: auto;
@@ -101,6 +109,10 @@ header .subtitle {
 }
 
 /* ── 組員 B 任務：在這裡加清除按鈕樣式 ── */
+.input-area button#clear-btn {
+  background: #ff4d4f;
+}
+
 .input-area button {
   background: #4f8ef7;
   color: white;
@@ -191,7 +203,6 @@ footer {
   color: #888;
   text-align: center;
   border-top: 1px solid #f0f0f0;
-}
   background: #fafafa;
 }
 
