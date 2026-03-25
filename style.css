@@ -43,6 +43,14 @@ header .subtitle {
   margin-top: 4px;
 }
 
+/* ── 組員 C 任務：在這裡加字數統計樣式 ── */
+.word-count {
+  font-size: 13px;
+  color: #666;
+  text-align: right;
+  padding: 8px 24px 0;
+}
+
 #chat-box {
   height: 360px;
   overflow-y: auto;
