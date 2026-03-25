@@ -164,11 +164,12 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 組員姓名 | 負責分支 | 主要修改內容 | PR 連結 | 是否完成 |
 | -------- | -------- | ------------ | ------- | -------- |
-| 洪紹禎   |          |              |         | ✅ |
-| 陳婉榕   |          |              |         | ✅ |
-| 楊程軒   |          |              |         | ✅ |
-| 陳柏宇   |          |              |         | ✅ |
-|          |          |              |         | ✅ / ❌  |
+| 洪紹禎（組長） | `main` | 修改標題 & header 顏色、review 所有 PR | — | ✅ |
+| 洪紹禎（組員 A） | `feature/member-a` | 新增訊息時間戳（HH:MM） | [PR #1](https://github.com/sz-hong/w5-collab-group-4/pull/1) | ✅ |
+| 陳婉榕（組員 B） | `feature/member-b` | 新增清除對話按鈕 | [PR #5](https://github.com/sz-hong/w5-collab-group-4/pull/5) | ✅ |
+| 楊程軒（組員 C） | `feature/member-c` | 新增字數統計功能 | [PR #4](https://github.com/sz-hong/w5-collab-group-4/pull/4) | ✅ |
+| 陳柏宇（組員 D） | `feature/member-d` | 新增深色模式 | [PR #2](https://github.com/sz-hong/w5-collab-group-4/pull/2) | ✅ |
+| 陳柏宇（組員 E） | `feature/member-e` | 新增鍵盤快捷鍵說明 | [PR #3](https://github.com/sz-hong/w5-collab-group-4/pull/3) | ✅ |
 
 ---
 
@@ -178,7 +179,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：GitHub repo → Pull requests，顯示所有 PR 的狀態（open / merged）
 
-（貼上截圖）
+![PR 列表截圖](screenshots/pr_list.png)
 
 ---
 
@@ -186,7 +187,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：其中一個 PR 的描述頁面，顯示完整的「做了什麼 / 如何測試」內容
 
-（貼上截圖）
+![PR 描述截圖](screenshots/pr_description.png)
 
 ---
 
@@ -194,7 +195,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：Files changed 頁面，顯示 inline comment 的留言
 
-（貼上截圖）
+![Code Review 截圖](screenshots/code_review.png)
 
 ---
 
@@ -202,7 +203,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：某個 PR 頁面顯示「Merged」紫色標籤
 
-（貼上截圖）
+![Merge 成功截圖](screenshots/merged.png)
 
 ---
 
@@ -210,21 +211,21 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：用瀏覽器打開 `index.html`，顯示所有功能整合完成的畫面
 
-（貼上截圖）
+![最終成果截圖](screenshots/final_result.png)
 
 ---
 
 ## 三、遇到的問題與解決方式
 
-**問題 1：**
+**問題 1：因push時需要手動修改目的地，組員推錯地方導致組長看不到**
 
-解決方式：
+解決方式：重新推一次，仔細檢查目的地
 
 ---
 
-**問題 2：**
+**問題 2：多位組員同時修改 `index.html` 和 `style.css`，合併時產生 Merge Conflict**
 
-解決方式：
+解決方式：組長按照 A → B → C → D → E 的順序依次 Merge PR，每次遇到 conflict 時手動比對並保留雙方的修改內容
 
 ---
 
@@ -232,11 +233,13 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 每位組員各寫 2–3 句，說明這週對 PR / Code Review 的理解或感想
 
-**（組員姓名）：**
+** 陳柏宇 : 這周的PR練習讓我學會如何做團隊的協作開發,除了能從中學習他人的內容之外，也可以讓隊友一起檢查錯誤 **
 
-**（組員姓名）：**
+** 楊程軒 : 透過這週的 PR 與 Code Review 練習，我更了解團隊協作在軟體開發中的重要性。透過他人回饋，可以發現自己程式中的問題，也能學習更好的程式撰寫方式。 **
 
-**（組員姓名）：**
+** 陳婉榕 : 很容易push到老師那裏，要注意看，可以看到別人對自己的修改的意見還不錯 **
+
+** 洪紹禎 : 今天的課程讓我更會使用github做版本控制，以及如何與他人協作，也學到要如何解決衝突問題。 **
 
 ---
 
@@ -244,17 +247,17 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 評分項目            | 分數（1–5） | 說明 |
 | ------------------- | ------------ | ---- |
-| PR 描述完整度       |              |      |
-| Review comment 品質 |              |      |
-| 回應 review 的態度  |              |      |
-| 最終成果完整度      |              |      |
+| PR 描述完整度       |       4       |      |
+| Review comment 品質 |        5      |      |
+| 回應 review 的態度  |        5      |      |
+| 最終成果完整度      |        5     |      |
 
 這週覺得最有挑戰的是？
 
-- [ ] 寫 PR 描述
+- [-] 寫 PR 描述
 - [ ] 給 Code Review
 - [ ] 回應 review 並修改
-- [ ] 解決 Merge Conflict
+- [-] 解決 Merge Conflict
 - [ ] 其他：＿＿＿
 
 ---
