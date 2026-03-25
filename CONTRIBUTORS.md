@@ -9,12 +9,12 @@
 
 | 角色 | 姓名 | 負責分支 | 任務 | 狀態 |
 |------|------|---------|------|------|
-| 組長 | （填名字）| `main` | 修改標題 & header 顏色、review 所有 PR | ⬜ |
-| 組員 A | （填名字）| `feature/member-a` | 新增訊息時間戳 | ⬜ |
-| 組員 B | （填名字）| `feature/member-b` | 新增清除對話按鈕 | ⬜ |
-| 組員 C | （填名字）| `feature/member-c` | 新增字數統計 | ⬜ |
-| 組員 D | （填名字）| `feature/member-d` | 新增深色模式 | ⬜ |
-| 組員 E | （填名字）| `feature/member-e` | 新增鍵盤快捷鍵說明 | ⬜ |
+| 組長 | 洪紹禎| `main` | 修改標題 & header 顏色、review 所有 PR | ✔️ |
+| 組員 A | 洪紹禎| `feature/member-a` | 新增訊息時間戳 | ✔️ |
+| 組員 B | 陳婉榕| `feature/member-b` | 新增清除對話按鈕 | ✔️ |
+| 組員 C | 楊程軒| `feature/member-c` | 新增字數統計 | ✔️ |
+| 組員 D | 陳柏宇| `feature/member-d` | 新增深色模式 | ✔️ |
+| 組員 E | 陳柏宇| `feature/member-e` | 新增鍵盤快捷鍵說明 | ✔️ |
 
 狀態：⬜ 未開始 / 🔄 進行中 / ✅ 已完成 / 🔀 PR 已開 / ✔️ 已 Merge
 
