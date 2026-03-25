@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
   <title>我們組的 Chatbot</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -30,8 +32,12 @@
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
     </div>
 
-    <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
-    <footer></footer>
+    <!-- 組員 E 任務：鍵盤快捷鍵說明 -->
+    <footer>
+      <span>⌨️ 快捷鍵：</span>
+      <kbd>Enter</kbd> 送出訊息　
+      <kbd>Esc</kbd> 清空輸入框
+    </footer>
   </div>
 
   <script>
@@ -73,14 +79,22 @@
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    document.getElementById('user-input').addEventListener('keypress', function(e) {
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
 
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
-    // 組員 D 任務：在這裡加深色模式切換函數
+    // 組員 D 任務：在這裡深色模式切換函數
+
+    // 組員 E 任務：Esc 清空輸入框
+    document.getElementById('user-input').addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        this.value = '';
+      }
+    });
   </script>
 
 </body>
+
 </html>
