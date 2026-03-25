@@ -31,6 +31,7 @@
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
+      <button id="clear-btn" onclick="clearChat()">清除</button>
     </div>
 
     <!-- 組員 E 任務：鍵盤快捷鍵說明 -->
@@ -85,6 +86,9 @@
     });
 
     // 組員 B 任務：在這裡加 clearChat() 函數
+    function clearChat() {
+      document.getElementById('chat-box').innerHTML = '';
+    }
     // 組員 C 任務：在這裡加字數統計更新邏輯
 
     // 組員 D 任務：深色模式切換函數

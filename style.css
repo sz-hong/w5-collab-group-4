@@ -101,6 +101,10 @@ header .subtitle {
 }
 
 /* ── 組員 B 任務：在這裡加清除按鈕樣式 ── */
+.input-area button#clear-btn {
+  background: #ff4d4f;
+}
+
 .input-area button {
   background: #4f8ef7;
   color: white;
@@ -191,7 +195,6 @@ footer {
   color: #888;
   text-align: center;
   border-top: 1px solid #f0f0f0;
-}
   background: #fafafa;
 }
 
