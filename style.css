@@ -115,6 +115,14 @@ header .subtitle {
   opacity: 0.85;
 }
 
+#clear-btn {
+  background: #f44336;
+}
+
+#clear-btn:hover {
+  background: #d32f2f;
+}
+
 /* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
 
 /* 深色模式切換按鈕 */
