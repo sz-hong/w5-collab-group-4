@@ -67,6 +67,13 @@ header .subtitle {
 }
 
 /* ── 組員 A 任務：在這裡加 .timestamp 樣式 ── */
+.timestamp {
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  opacity: 0.5;
+  margin-top: 4px;
+}
 .message.user {
   background: #4f8ef7;
   color: white;
@@ -177,10 +184,25 @@ body.dark footer {
 }
 
 /* ── 組員 E 任務：在這裡加 footer 樣式 ── */
+/* ── 組員 E 任務：footer 與鍵盤快捷鍵樣式 ── */
 footer {
   padding: 10px 24px;
   font-size: 12px;
-  color: #aaa;
+  color: #888;
   text-align: center;
   border-top: 1px solid #f0f0f0;
+}
+  background: #fafafa;
+}
+
+footer kbd {
+  display: inline-block;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-family: monospace;
+  font-size: 11px;
+  color: #555;
 }

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
   <title>我們組的 Chatbot</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -31,11 +33,22 @@
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
     </div>
 
-    <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
-    <footer></footer>
+    <!-- 組員 E 任務：鍵盤快捷鍵說明 -->
+    <footer>
+      <span>⌨️ 快捷鍵：</span>
+      <kbd>Enter</kbd> 送出訊息　
+      <kbd>Esc</kbd> 清空輸入框
+    </footer>
   </div>
 
   <script>
+    function getTimestamp() {
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2, '0');
+      const mm = String(now.getMinutes()).padStart(2, '0');
+      return `${hh}:${mm}`;
+    }
+
     function sendMessage() {
       const input = document.getElementById('user-input');
       const chatBox = document.getElementById('chat-box');
@@ -43,22 +56,31 @@
 
       if (!text) return;
 
+      const time = getTimestamp();
+
       const userDiv = document.createElement('div');
       userDiv.className = 'message user';
-      // 組員 A 任務：在這裡加入時間戳
       userDiv.textContent = text;
+      const userTime = document.createElement('span');
+      userTime.className = 'timestamp';
+      userTime.textContent = time;
+      userDiv.appendChild(userTime);
       chatBox.appendChild(userDiv);
 
       const botDiv = document.createElement('div');
       botDiv.className = 'message bot';
       botDiv.textContent = `你說了「${text}」！`;
+      const botTime = document.createElement('span');
+      botTime.className = 'timestamp';
+      botTime.textContent = time;
+      botDiv.appendChild(botTime);
       chatBox.appendChild(botDiv);
 
       input.value = '';
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    document.getElementById('user-input').addEventListener('keypress', function(e) {
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
 
@@ -79,7 +101,16 @@
         document.getElementById('dark-toggle').textContent = '☀️';
       }
     })();
+    // 組員 D 任務：在這裡深色模式切換函數
+
+    // 組員 E 任務：Esc 清空輸入框
+    document.getElementById('user-input').addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        this.value = '';
+      }
+    });
   </script>
 
 </body>
+
 </html>
